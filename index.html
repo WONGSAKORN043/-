@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Music Link Page</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{
+      min-height:100vh;
+      font-family: "Poppins", Arial, sans-serif;
+      display:flex;align-items:center;justify-content:center;
+      background: linear-gradient(160deg, #0a0a0f 0%, #0b1b4a 45%, #1a0550 100%);
+      overflow:hidden;
+    }
+
+    .card{
+      width:340px;max-width:92vw;
+      background:#fff;
+      border-radius:18px;overflow:hidden;text-align:center;
+      box-shadow:0 16px 36px rgba(0,0,0,.4);
+    }
+
+    .cover{padding:18px 16px 8px}
+    .cover img{width:220px;max-width:70vw;border-radius:14px;box-shadow:0 10px 24px rgba(0,0,0,.3)}
+
+    .title{font-size:22px;font-weight:800;color:#121212;margin:10px 0 2px}
+    .subtitle{font-size:12px;color:#6b6b6b;margin-bottom:12px}
+
+    .links{display:flex;flex-direction:column;gap:10px;padding:0 14px 16px}
+    .link{display:flex;justify-content:space-between;align-items:center;
+          background:#f5f7fb;padding:10px 12px;border-radius:24px;
+          box-shadow:0 6px 16px rgba(10,10,10,.12);
+          transition:.2s;text-decoration:none;}
+    .link:hover{transform:translateY(-2px);}
+
+    .logo img{max-height:18px;width:auto;display:block}
+
+    .btn{
+      border:2px solid #111;
+      background:transparent;
+      color:#111;
+      padding:6px 12px;
+      border-radius:16px;
+      font-size:11px;
+      font-weight:700;
+      cursor:pointer;
+    }
+    .btn:hover{background:#111;color:#fff}
+
+    .footer{font-size:12px;color:#777;margin:14px 0 6px}
+    .powered{font-size:11px;color:#8b8b8b;margin:0 0 20px}
+
+    @media (max-width:480px){
+      .card{width:92vw}
+      .cover img{width:64vw}
+      .title{font-size:20px}
+      .subtitle{font-size:11px}
+      .logo img{max-height:16px}
+      .btn{padding:5px 10px;font-size:10px}
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="cover">
+      <img src="https://scontent.fbkk3-2.fna.fbcdn.net/v/t1.15752-9/535547475_1485197942623706_8913317638371846487_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_eui2=AeEAM-2OP1IIxJSR_ase2RQW9Je8Arx6U5D0l7wCvHpTkKx0OXk9j_TRUat367crDA1YWFYELOQsBDkEv49pmGzp&_nc_ohc=SM3WTDvfbJIQ7kNvwFqBh2K&_nc_oc=AdkMJLVBMNxViSmo2FnUVIjy8729dE6keAGcwMR2it5eNXhXcTI1QUi-VXtSiODU0Do&_nc_zt=23&_nc_ht=scontent.fbkk3-2.fna&oh=03_Q7cD3AHRhJGTNtbiBFG0FsH-KsxEGoEkMoetpJVb6c1c1TNwfg&oe=68D54D2A" alt="Album Cover" />
+    </div>
+    <div class="title">SEEGAME</div>
+    <div class="subtitle">สวัสดีครับผมชื่อเกมส์</div>
+
+    <div class="links">
+      <a href="https://www.youtube.com/playlist?list=OLAK5uy_kNQ43z60F-6BJTf3pGBBBNRlgOVMDXQyE" target="_blank" rel="noopener" class="link">
+        <span class="logo"><img src="https://upload.wikimedia.org/wikipedia/commons/3/34/YouTube_logo_%282017%29.png"></span>
+        <button class="btn">ฟังเลย</button>
+      </a>
+      <a href="https://music.youtube.com/playlist?list=OLAK5uy_luyIqP-9S_h2vEpBzJBXB56COQcX3b-K0" target="_blank" rel="noopener" class="link">
+        <span class="logo"><img src="https://wp.logos-download.com/wp-content/uploads/2022/12/YouTube_Music_Logo.png?dl"></span>
+        <button class="btn">ฟังเลย</button>
+      </a>
+      <a href="https://open.spotify.com/artist/24rjHcLnDRdz4qKjSHKyvj" target="_blank" rel="noopener" class="link">
+        <span class="logo"><img src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Full_Logo_RGB_Green.png"></span>
+        <button class="btn">ฟังเลย</button>
+      </a>
+      <a href="https://music.apple.com/ma/artist/seegame/1636274151" target="_blank" rel="noopener" class="link">
+        <span class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkCnlJ9HC8Zfbes1lBIkgqXq1Jiwvpro6zzg&s"></span>
+        <button class="btn">ฟังเลย</button>
+      </a>
+      <a href="https://www.tiktok.com/music/%E0%B8%AA%E0%B8%A7%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%B5%E0%B8%84%E0%B8%A3%E0%B8%B1%E0%B8%9A%E0%B8%9C%E0%B8%A1%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%81%E0%B8%A1%E0%B8%AA%E0%B9%8C-7530638349939902465" target="_blank" rel="noopener" class="link">
+        <span class="logo"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV6YlKLcqzqtpC3eBtFKIpdDwzgxjny_Z_Aw&s"></span>
+        <button class="btn">ฟังเลย</button>
+      </a>
+    </div>
+
+    <div class="footer">คุกกี้ ・ ความเป็นส่วนตัว</div>
+    <div class="powered">POWERED BY SEEGAME.</div>
+  </div>
+</body>
+</html>
